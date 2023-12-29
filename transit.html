@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/039f4de4bf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fjalla+One&family=Libre+Baskerville&family=Lusitana&family=Montserrat&family=Nunito:wght@300;500&family=Open+Sans&family=Poppins&family=Raleway&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
+
+  
+</head>
+<body>
+  <div class="contact-info-bar">
+    <p id="email2">
+        <i class="far fa-envelope"></i> <a href="mailto:info@example.com">SEND EMAIL</a>
+    </p>
+    <span class="vertical-line"></span>
+    <p id="phone">
+        <i class="fas fa-phone"></i> <a href="tel:+901234567890">+90 123 456 7890</a>
+    </p>  
+    <span class="vertical-line"></span>
+    <p id="location">
+        <i class="fas fa-map-marker-alt"></i>DOGUBAYAZIT/AGRI
+    </p> 
+   
+    <div class="language-buttons">
+      <button onclick="changeLanguage('tr')">
+        <img src="Images/turk.png" alt="Turkish Flag">
+      </button>
+      <button onclick="changeLanguage('en')">
+        <img src="Images/ingiliz.png" alt="English Flag">
+      </button>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button onclick="performSearch()">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+</div>
+<header class="ust">
+  <div class="container1">
+    <div class="logo">
+      <img src="Images/beyaz.png" alt="">
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html" id="home"> <i class="fas fa-home"></i> HOME PAGE</a></li>
+        <li class="dropdown5">
+          <a href="aboutus.html" id="aboutDropdown" class="dropbtn5"> ABOUT US<i class="fas fa-caret-down"></i></a>
+          <div class="dropdown5-content" id="aboutDropdownContent">
+              <a href="misyon.html" id="ourMission"><i class="fas fa-chevron-left"></i> Our Mission</a>
+              <a href="vizyon.html" id="ourVision"> <i class="fas fa-chevron-left"></i>Our Vision </a>
+          </div>
+      </li>
+        <li class="dropdown2">
+          <a href="service.html" id="ourServices3" class="dropbtn2"> OUR SERVICES <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown2-content">
+            <a href="#" onclick="changePage('ithalat.html')" id="importServices"> <i class="fas fa-chevron-left"></i> IMPORT SERVICES</a>
+            <a href="#" onclick="changePage('ihracat.html')" id="exportServices"> <i class="fas fa-chevron-left"></i> EXPORT SERVICES</a>
+            <a href="#" onclick="changePage('transit.html')" id="transitCustomServices"> <i class="fas fa-chevron-left"></i> TRANSIT CUSTOM SERVICES</a>
+            <a href="#" onclick="changePage('antrepo.html')" id="antrepoServices"> <i class="fas fa-chevron-left"></i> ANTREPO SERVICES</a>
+            <a href="#" onclick="changePage('digital.html')" id="digitalArchiving"> <i class="fas fa-chevron-left"></i> DIGITAL ARCHIVING</a>
+            <a href="#" onclick="changePage('danismanlik.html')" id="consultancyServices"> <i class="fas fa-chevron-left"></i> CONSULTANCY SERVICES</a>
+          </div>
+        </li>
+        <li><a href="quality.html" id="qualityPolicy">  OUR QUALITY POLICY</a></li>
+        <li class="dropdown-legislation">
+       <a href="#" id="legislationMENU">USEFUL INFO <i class="fas fa-caret-down"></i></a>
+       <div class="dropdown-legislation-content">
+       <a href="gumrukrehber.html"><i class="fas fa-chevron-left" id="customsGuide"></i> Customs Guide</a>
+       <a href="https://uygulama.gtb.gov.tr/BeyannameSorgulama/" target="_blank" id="declarationInquiry"><i class="fas fa-chevron-left"></i>Declaration Inquiry</a>
+       <a href="https://webgumruk.com/authentication/login.xhtml" target="_blank"><i class="fas fa-chevron-left" id="webCustoms"></i>Web Customs</a>
+       <a href="https://ticaret.gov.tr/gumruk-islemleri/mevzuat" target="_blank"><i class="fas fa-chevron-left" id="legislationLink"></i>Legislation</a>
+       
+    <!-- Diğer legislation sayfalarını ekleyebilirsiniz -->
+      </div>
+      </li>
+        <li><a href="contact.html" id="contactUs">  CONTACT US</a></li>
+      
+      </ul>
+    </div>
+    <!-- Eklenen mobil menü düğmesi -->
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+</header>
+    <section class="transit-container">
+      <img src="Images/transit.jpg" alt="" class="background-image-transit">
+      <div class="transit-overlay">
+          <h2 id="transitCustomServices1">TRANSIT CUSTOM SERVICES</h2>
+          <p id="transitCustomServicesText1">
+            Transit trade is a form of trade that enables the movement of goods or services from one country to another. This form of trade allows goods or services allows it to pass from one country's customs territory to another without being subjected to import and export procedures. Transit trade is international helps make trade easier and more efficient by providing a fast and effective solution in transportation and logistics processes.
+            Customs clearance is one of the most important processes encountered in the transportation of goods and services from one country to another. Transit customs clearance services, have been developed to ensure that these processes run smoothly. There are certain rules that must be followed during transit regulations and procedures. Managing these processes correctly will speed up your trading and optimize your costs.
+          </p>
+      </div>
+    </section>
+     <!-- <div class="gumruk-header">
+        <h1 class="gumruk-title"> TRANSIT CUSTOM SERVICES</h1>
+     </div>
+     <div class="main-content3">
+      <div class="side-menu3">
+        <h3>OUR SERVICES</h3>
+        <ul>
+          <li id="importServices"><a href="ithalat.html"><i class="fas fa-chevron-right"></i>Import Services</a></li>
+          <li id="exportServices"><a href="ihracat.html"><i class="fas fa-chevron-right"></i>Export Services</a></li>
+          <li id="transitServices"><a href="transit.html"><i class="fas fa-chevron-right"></i>Transit Custom Services</a></li>
+          <li id="digitalServices"><a href="digital.html"><i class="fas fa-chevron-right"></i>Digital Archiving</a></li>
+          <li id="consultancyServices"><a href="danismanlik.html"><i class="fas fa-chevron-right"></i>Consultancy Services</a></li>>
+        </ul>
+    </div>
+     <section class="transit-content">
+        <div class="image-container-transit">
+            <img src="Images/transit.jpg" alt="Resim 1">
+            <img src="Images/transit2.jpg" alt="Resim 2">
+        </div>
+        <p>
+          Transit trade is a form of trade that enables the movement of goods or services from one country to another. This form of trade allows goods or services allows it to pass from one country's customs territory to another without being subjected to import and export procedures. Transit trade is international helps make trade easier and more efficient by providing a fast and effective solution in transportation and logistics processes.
+        </p>
+        <p>
+          Customs clearance is one of the most important processes encountered in the transportation of goods and services from one country to another. Transit customs clearance services, have been developed to ensure that these processes run smoothly. There are certain rules that must be followed during transit regulations and procedures. Managing these processes correctly will speed up your trading and optimize your costs.
+        </p>
+        <p>
+          Boğaziçi Gümrükleme offers a professional service focusing on the complexities of transit trade. Our company aims to minimize the challenges of cross-border trade by providing clients with reliable and effective transit customs clearance solutions. Our experienced team is well-versed in international customs regulations and offers solutions tailored to our clients' needs. As Boğaziçi Gümrükleme, we are here to help you manage your transit trade smoothly.
+      </p>
+    </section>
+  </div> -->
+
+  <footer class="footer-section">
+    <div class="company-info">
+      <h2>BOĞAZİÇİ GÜMRÜKLEME İTH.İHR.TURİZM PET.ÜR.SAN VE TİC.LTD.ŞTİ</h2>
+      <p>Address:  ÇİFTEPINAR NEIGHBORHOOD INEGOL STREET ARAS BUSINESS CENTER NO:32/5
+        DOĞUBAYAZIT / AĞRI
+        </p>
+      <p>Telephone: 123456789</p>
+      <p>Email: info@example.com</p>
+    </div>
+  
+    <div class="quick-menu">
+      <h2>QUICK MENU</h2>
+      <ul>
+        <li onclick="window.location.href='index.html'"><i class="fas fa-chevron-right"></i>Home Page</li>
+        <li onclick="window.location.href='aboutus.html'"><i class="fas fa-chevron-right"></i>About Us</li>
+        <li onclick="window.location.href='service.html'"><i class="fas fa-chevron-right"></i>Our Services</li>
+        <li onclick="window.location.href='quality.html'"><i class="fas fa-chevron-right"></i>Our Quality Policy</li>
+        <li onclick="window.location.href='contact.html'"><i class="fas fa-chevron-right"></i>Contact</li>
+      </ul>
+    </div>
+  
+    <div class="services3">
+      <h2>OUR SERVICES</h2>
+      <ul>
+        <li onclick="window.location.href='ithalat.html'"><i class="fas fa-chevron-right"></i>Import Services</li>
+        <li onclick="window.location.href='ihracat.html'"><i class="fas fa-chevron-right"></i>Export Services</li>
+        <li onclick="window.location.href='transit.html'"><i class="fas fa-chevron-right"></i>Transit Custom Services</li>
+        <li onclick="window.location.href='antrepo.html'"><i class="fas fa-chevron-right"></i>Antrepo Services</li>
+        <li onclick="window.location.href='digital.html'"><i class="fas fa-chevron-right"></i>Digital Archiving</li>
+        <li onclick="window.location.href='danismanlik.html'"><i class="fas fa-chevron-right"></i>Consultancy Services</li>
+      </ul>
+    </div>
+    <div class="useful-info2">
+      <h2>USEFUL INFORMATION</h2>
+      <ul>
+        <li onclick="window.location.href='gumrukrehber.html'"><i class="fas fa-chevron-right"></i>Customs Guide</li>
+        <li><a href="https://uygulama.gtb.gov.tr/BeyannameSorgulama/" target="_blank"><i class="fas fa-chevron-right"></i>Declaration Inquiry</a></li>
+        <li><a href="https://webgumruk.com/authentication/login.xhtml" target="_blank"><i class="fas fa-chevron-right"></i>Web Customs</a></li>
+        <li><a href="https://ticaret.gov.tr/gumruk-islemleri/mevzuat" target="_blank"><i class="fas fa-chevron-right"></i>Legislation</a></li>
+      </ul>
+    </div>
+  </footer>
+    <div id="scroll-to-top" onclick="scrollToTop()">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+    
+    <div class="contact-buttonnn mail-button" onclick="redirectToEmail()">
+      <i class="far fa-envelope"></i>
+    </div>
+    
+    <div class="contact-buttonnnn phone-button" onclick="redirectToPhone()">
+      <i class="fas fa-phone"></i>
+    </div>
+
+<script src="transittrans.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

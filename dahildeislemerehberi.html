@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/039f4de4bf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fjalla+One&family=Libre+Baskerville&family=Lusitana&family=Montserrat&family=Nunito:wght@300;500&family=Open+Sans&family=Poppins&family=Raleway&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
+
+  
+</head>
+<body>
+  <div class="contact-info-bar">
+    <p id="email2">
+        <i class="far fa-envelope"></i> <a href="mailto:info@example.com">SEND EMAIL</a>
+    </p>
+    <span class="vertical-line"></span>
+    <p id="phone">
+        <i class="fas fa-phone"></i> <a href="tel:+901234567890">+90 123 456 7890</a>
+    </p>  
+    <span class="vertical-line"></span>
+    <p id="location">
+        <i class="fas fa-map-marker-alt"></i>DOGUBAYAZIT/AGRI
+    </p> 
+   
+    <div class="language-buttons">
+      <button onclick="changeLanguage('tr')">
+        <img src="Images/turk.png" alt="Turkish Flag">
+      </button>
+      <button onclick="changeLanguage('en')">
+        <img src="Images/ingiliz.png" alt="English Flag">
+      </button>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button onclick="performSearch()">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+</div>
+<header class="ust">
+  <div class="container1">
+    <div class="logo">
+      <img src="Images/beyaz.png" alt="">
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html" id="home"> <i class="fas fa-home"></i> HOME PAGE</a></li>
+        <li class="dropdown5">
+          <a href="aboutus.html" id="aboutDropdown" class="dropbtn5"> ABOUT US<i class="fas fa-caret-down"></i></a>
+          <div class="dropdown5-content" id="aboutDropdownContent">
+              <a href="misyon.html" id="ourMission"><i class="fas fa-chevron-left"></i> Our Mission</a>
+              <a href="vizyon.html" id="ourVision"> <i class="fas fa-chevron-left"></i>Our Vision </a>
+          </div>
+      </li>
+        <li class="dropdown2">
+          <a href="service.html" id="ourServices3" class="dropbtn2"> OUR SERVICES <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown2-content">
+            <a href="#" onclick="changePage('ithalat.html')" id="importServices"> <i class="fas fa-chevron-left"></i> IMPORT SERVICES</a>
+            <a href="#" onclick="changePage('ihracat.html')" id="exportServices"> <i class="fas fa-chevron-left"></i> EXPORT SERVICES</a>
+            <a href="#" onclick="changePage('transit.html')" id="transitCustomServices"> <i class="fas fa-chevron-left"></i> TRANSIT CUSTOM SERVICES</a>
+            <a href="#" onclick="changePage('antrepo.html')" id="antrepoServices"> <i class="fas fa-chevron-left"></i> ANTREPO SERVICES</a>
+            <a href="#" onclick="changePage('digital.html')" id="digitalArchiving"> <i class="fas fa-chevron-left"></i> DIGITAL ARCHIVING</a>
+            <a href="#" onclick="changePage('danismanlik.html')" id="consultancyServices"> <i class="fas fa-chevron-left"></i> CONSULTANCY SERVICES</a>
+          </div>
+        </li>
+        <li><a href="quality.html" id="qualityPolicy">  OUR QUALITY POLICY</a></li>
+        <li class="dropdown-legislation">
+       <a href="#" id="legislationMENU">USEFUL INFO <i class="fas fa-caret-down"></i></a>
+       <div class="dropdown-legislation-content">
+       <a href="gumrukrehber.html"><i class="fas fa-chevron-left" id="customsGuide"></i> Customs Guide</a>
+       <a href="https://uygulama.gtb.gov.tr/BeyannameSorgulama/" target="_blank" id="declarationInquiry"><i class="fas fa-chevron-left"></i>Declaration Inquiry</a>
+       <a href="https://webgumruk.com/authentication/login.xhtml" target="_blank"><i class="fas fa-chevron-left" id="webCustoms"></i>Web Customs</a>
+       <a href="https://ticaret.gov.tr/gumruk-islemleri/mevzuat" target="_blank"><i class="fas fa-chevron-left" id="legislationLink"></i>Legislation</a>
+       
+    <!-- Diğer legislation sayfalarını ekleyebilirsiniz -->
+      </div>
+      </li>
+        <li><a href="contact.html" id="contactUs">  CONTACT US</a></li>
+      
+      </ul>
+    </div>
+    <!-- Eklenen mobil menü düğmesi -->
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+
+    <section class="DahideIsleme">
+        <div class="overlayDahil"></div>
+        <div class="contentDahil">
+    
+          <div class="titleDahil">Inward Processing Guide</div>
+
+          <div class="questionq4">
+            <p>What does Inward Processing Regime mean?</p>
+            <div class="answeeer4">
+              The Inward Processing Regime is a customs regime that allows the temporary importation of goods produced in the country for a specific process and later re-exportation.
+            </div>
+          </div>
+      
+          <div class="questionq4">
+            <p>Key Concepts of Inward Processing Regime</p>
+            <div class="answeeer4">
+              Key concepts under the Inward Processing Regime include terms such as "processed goods," "imported goods," "goods subject to processing," and similar terms.
+            </div>
+          </div>
+      
+          <div class="questionq4">
+            <p>Advantages of Inward Processing Regime</p>
+            <div class="answeeer4">
+              The advantages of the Inward Processing Regime include exemption from customs duties, savings on import taxes, and competitive advantages.
+            </div>
+          </div>
+      
+          <div class="questionq4">
+            <p>How to Benefit from Inward Processing Regime?</p>
+            <div class="answeeer4">
+              To benefit from the Inward Processing Regime, you must apply to the relevant customs administration, complete the necessary documents, and meet the required conditions.
+            </div>
+          </div>
+      
+          <div class="questionq4">
+            <p>Is there a time limit in the Inward Processing Regime?</p>
+            <div class="answeeer4">
+              Yes, there is a specific time limit in the Inward Processing Regime. The goods subject to processing must be re-exported within a specified period.
+            </div>
+          </div>
+      
+          <div class="questionq4">
+            <p>Is it possible to source inputs domestically under the Inward Processing Regime?</p>
+            <div class="answeeer4">
+              It is possible to source inputs domestically under the Inward Processing Regime. However, this is subject to customs regulations and the conditions of the regime.
+            </div>
+          </div>
+      
+          <div class="questionq4">
+            <p>How to close the Inward Processing Regime?</p>
+            <div class="answeeer4">
+              To close the Inward Processing Regime, you must apply to the customs administration, obtain the necessary permits, and complete the required procedures.
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="company-info">
+          <h2>BOĞAZİÇİ GÜMRÜKLEME İTH.İHR.TURİZM PET.ÜR.SAN VE TİC.LTD.ŞTİ</h2>
+          <p>Address:  ÇİFTEPINAR NEIGHBORHOOD INEGOL STREET ARAS BUSINESS CENTER NO:32/5
+            DOĞUBAYAZIT / AĞRI
+            </p>
+          <p>Telephone: 123456789</p>
+          <p>Email: info@example.com</p>
+        </div>
+      
+        <div class="quick-menu">
+          <h2>QUICK MENU</h2>
+          <ul>
+            <li onclick="window.location.href='index.html'"><i class="fas fa-chevron-right"></i>Home Page</li>
+            <li onclick="window.location.href='aboutus.html'"><i class="fas fa-chevron-right"></i>About Us</li>
+            <li onclick="window.location.href='service.html'"><i class="fas fa-chevron-right"></i>Our Services</li>
+            <li onclick="window.location.href='quality.html'"><i class="fas fa-chevron-right"></i>Our Quality Policy</li>
+            <li onclick="window.location.href='contact.html'"><i class="fas fa-chevron-right"></i>Contact</li>
+          </ul>
+        </div>
+      
+        <div class="services3">
+          <h2>OUR SERVICES</h2>
+          <ul>
+            <li onclick="window.location.href='ithalat.html'"><i class="fas fa-chevron-right"></i>Import Services</li>
+            <li onclick="window.location.href='ihracat.html'"><i class="fas fa-chevron-right"></i>Export Services</li>
+            <li onclick="window.location.href='transit.html'"><i class="fas fa-chevron-right"></i>Transit Custom Services</li>
+            <li onclick="window.location.href='antrepo.html'"><i class="fas fa-chevron-right"></i>Antrepo Services</li>
+            <li onclick="window.location.href='digital.html'"><i class="fas fa-chevron-right"></i>Digital Archiving</li>
+            <li onclick="window.location.href='danismanlik.html'"><i class="fas fa-chevron-right"></i>Consultancy Services</li>
+          </ul>
+        </div>
+        <div class="useful-info2">
+          <h2>USEFUL INFORMATION</h2>
+          <ul>
+            <li onclick="window.location.href='gumrukrehber.html'"><i class="fas fa-chevron-right"></i>Customs Guide</li>
+            <li><a href="https://uygulama.gtb.gov.tr/BeyannameSorgulama/" target="_blank"><i class="fas fa-chevron-right"></i>Declaration Inquiry</a></li>
+            <li><a href="https://webgumruk.com/authentication/login.xhtml" target="_blank"><i class="fas fa-chevron-right"></i>Web Customs</a></li>
+            <li><a href="https://ticaret.gov.tr/gumruk-islemleri/mevzuat" target="_blank"><i class="fas fa-chevron-right"></i>Legislation</a></li>
+          </ul>
+        </div>
+      </footer>
+<div id="scroll-to-top" onclick="scrollToTop()">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+<div class="contact-buttonnn mail-button" onclick="redirectToEmail()">
+  <i class="far fa-envelope"></i>
+</div>
+
+<div class="contact-buttonnnn phone-button" onclick="redirectToPhone()">
+  <i class="fas fa-phone"></i>
+</div>
+
+<script src="dahildeislemetrans.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

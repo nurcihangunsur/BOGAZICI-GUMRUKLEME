@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://kit.fontawesome.com/039f4de4bf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fjalla+One&family=Libre+Baskerville&family=Lusitana&family=Montserrat&family=Nunito:wght@300;500&family=Open+Sans&family=Poppins&family=Raleway&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
+
+  
+</head>
+<body>
+  
+  <div class="contact-info-bar">
+    <p id="email2">
+        <i class="far fa-envelope"></i> <a href="mailto:info@example.com">SEND EMAIL</a>
+    </p>
+    <span class="vertical-line"></span>
+    <p id="phone">
+        <i class="fas fa-phone"></i> <a href="tel:+901234567890">+90 123 456 7890</a>
+    </p>  
+    <span class="vertical-line"></span>
+    <p id="location">
+        <i class="fas fa-map-marker-alt"></i>DOGUBAYAZIT/AGRI
+    </p> 
+   
+    <div class="language-buttons">
+      <button onclick="changeLanguage('tr')">
+        <img src="Images/turk.png" alt="Turkish Flag">
+      </button>
+      <button onclick="changeLanguage('en')">
+        <img src="Images/ingiliz.png" alt="English Flag">
+      </button>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button onclick="performSearch()">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+</div>
+<header class="ust">
+  <div class="container1">
+    <div class="logo">
+      <img src="Images/beyaz.png" alt="">
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html" id="home"> <i class="fas fa-home"></i> HOME PAGE</a></li>
+        <li class="dropdown5">
+          <a href="aboutus.html" id="aboutDropdown" class="dropbtn5"> ABOUT US<i class="fas fa-caret-down"></i></a>
+          <div class="dropdown5-content" id="aboutDropdownContent">
+              <a href="misyon.html" id="ourMission"><i class="fas fa-chevron-left"></i> Our Mission</a>
+              <a href="vizyon.html" id="ourVision"> <i class="fas fa-chevron-left"></i>Our Vision </a>
+          </div>
+      </li>
+        <li class="dropdown2">
+          <a href="service.html" id="ourServices3" class="dropbtn2"> OUR SERVICES <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown2-content">
+            <a href="#" onclick="changePage('ithalat.html')" id="importServices"> <i class="fas fa-chevron-left"></i> IMPORT SERVICES</a>
+            <a href="#" onclick="changePage('ihracat.html')" id="exportServices"> <i class="fas fa-chevron-left"></i> EXPORT SERVICES</a>
+            <a href="#" onclick="changePage('transit.html')" id="transitCustomServices"> <i class="fas fa-chevron-left"></i> TRANSIT CUSTOM SERVICES</a>
+            <a href="#" onclick="changePage('antrepo.html')" id="antrepoServices"> <i class="fas fa-chevron-left"></i> ANTREPO SERVICES</a>
+            <a href="#" onclick="changePage('digital.html')" id="digitalArchiving"> <i class="fas fa-chevron-left"></i> DIGITAL ARCHIVING</a>
+            <a href="#" onclick="changePage('danismanlik.html')" id="consultancyServices"> <i class="fas fa-chevron-left"></i> CONSULTANCY SERVICES</a>
+          </div>
+        </li>
+        <li><a href="quality.html" id="qualityPolicy">  OUR QUALITY POLICY</a></li>
+        <li class="dropdown-legislation">
+       <a href="#" id="legislationMENU">USEFUL INFO <i class="fas fa-caret-down"></i></a>
+       <div class="dropdown-legislation-content">
+       <a href="gumrukrehber.html"><i class="fas fa-chevron-left" id="customsGuide"></i> Customs Guide</a>
+       <a href="https://uygulama.gtb.gov.tr/BeyannameSorgulama/" target="_blank" id="declarationInquiry"><i class="fas fa-chevron-left"></i>Declaration Inquiry</a>
+       <a href="https://webgumruk.com/authentication/login.xhtml" target="_blank"><i class="fas fa-chevron-left" id="webCustoms"></i>Web Customs</a>
+       <a href="https://ticaret.gov.tr/gumruk-islemleri/mevzuat" target="_blank"><i class="fas fa-chevron-left" id="legislationLink"></i>Legislation</a>
+       
+    <!-- Diğer legislation sayfalarını ekleyebilirsiniz -->
+      </div>
+      </li>
+        <li><a href="contact.html" id="contactUs">  CONTACT US</a></li>
+      
+      </ul>
+    </div>
+    <!-- Eklenen mobil menü düğmesi -->
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+<section class="slider-container">
+  <div class="slider">
+    <div class="slide slide-from-top active">
+      <img src="Images/slider-1.jpg" alt="Slide 1">
+      <h1 class="buyukBaslik animated-text" id="titleToAnimate">BOĞAZİÇİ GÜMRÜKLEME İTH.İHR.TURİZM PET.ÜR.SAN VE TİC.LTD.ŞTİ</h1>
+      <div class="caption1" id="paragraphToAnimate">Unlock the doors to global success with our comprehensive business expansion services.<br> Let us guide you towards new horizons and limitless possibilities.</div>
+  
+    </div>
+
+    <div class="slide slide-from-top">
+      <div class="slide-img-container">
+        <img src="Images/images1.jpg" alt="Slide 2">
+      </div>
+      <div class="caption2">Elevate your business growth to unprecedented heights with our unparalleled import and export services. Experience a seamless journey to success with our dedicated solutions.</div>
+    </div>
+
+    <div class="slide slide-from-bottom">
+      <div class="slide-img-container">
+        <img src="Images/images3.jpg" alt="Slide 3">
+        <div class="caption3">Embark on your export journey with confidence and support. Our team is committed to standing by your side, ensuring your success in the global market.</div>
+      </div>
+    </div>
+
+    <div class="slide slide-column">
+      <img src="Images/images4.jpg" alt="Slide 4">
+      <div class="caption4">Discover perfect solutions for your import needs. Our comprehensive and tailor-made services guarantee efficiency, accuracy, and success in every import venture.</div>
+    </div>
+
+    <div class="slide slide-from-top">
+      <img src="Images/slider5.jpg" alt="Slide 5">
+      <div class="caption5">Experience assurance and speed in the industry like never before. Our commitment to excellence ensures your business thrives in a dynamic and competitive environment.</div>
+    </div>
+  </div>
+
+  <div class="controls">
+      <div class="prev">&#9665;</div>
+      <div class="dots"></div>
+      <div class="next">&#9655;</div>
+  </div>
+</section>
+
+<section class="expertise-section">
+  <div class="expertise-image">
+    <img src="Images/guven.jpg" alt="Güven veren uzmanlık">
+  </div>
+  <div class="expertise-content">
+    <h2>Reliable Expertise</h2>
+    <p>
+      Bogaziçi Gümrükleme, offers reliable solutions to the business world with years of experience and expertise. We help our customers expand their trade with confidence. As Boğaziçi Gümrükleme, we have a strong network and detailed knowledge. We understand the complexity across borders and offer our customers We support them to optimize their business processes by providing fast, reliable and efficient customs clearance services. With the expertise we provide to our customers, we make them feel that we are with them every step of the way. As Bogaziçi Gümrükleme, we aim to build a trusting business relationship and provide our customers with a seamless customs clearance experience. we are committed to keeping it alive.
+    </p>
+   
+  </div>
+</section>
+
+<section class="additional-section2">
+  <div class="additional-content2">
+      <h2>BOĞAZİÇİ GÜMRÜKLEME İTH.İHR.TURİZM PET.ÜR.SAN VE TİC.LTD.ŞTİ</h2>
+      <p>Secures your imports and facilitates your exports.</p>
+  </div>
+  <div class="additional-images2">
+      <div class="image-box2">
+          <img src="Images/gumruk1.jpg" alt="Resim 1">
+          <h3>Customized Customs Solutions</h3>
+          <p>
+            Boğaziçi Gümrükleme, helps its customers optimize their import processes by offering customized customs solutions. Customized customs solutions are designed to simplify complex processes and provide cost advantages.
+          </p>
+      </div>
+      <div class="image-box2">
+          <img src="Images/gumruk2.jpg" alt="Resim 2">
+          <h3>Abolishing or Reducing Customs Duty</h3>
+          <p>
+            Boğaziçi Gümrükleme, provides cost advantages by offering its customers the chance to remove or reduce customs duty. Especially if you want to increase your trade, reducing customs duties can improve your business and help you gain a competitive advantage.
+          </p>
+      </div>
+  </div>
+</section>
+<section id="services" class="sectionArea">
+  <div class="servicesUst">
+    <h3 class="bolumBaslik" id="servicesTitle">OUR SERVICES</h3>
+  </div>
+  <div class="servicesBody">
+    <div class="container">
+      <div class="col3">
+        <div class="item">
+          <div class="zoom">
+            <img src="Images/images5.jpg" alt="">
+          </div>
+          <div class="ItemText">
+            <h3 id="importSolutionsTitle">GLOBAL IMPORT SOLUTIONS</h3>
+            <p id="importSolutionsContent"> Efficiently import goods from around the world. Streamlined logistics and documentation.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col3">
+        <div class="item">
+          <div class="zoom">
+            <img src="Images/images6.jpg" alt="">
+          </div>
+          <div class="ItemText">
+            <h3 id="expansionStrategiesTitle">EXPORT EXPANSION STRATEGIES</h3>
+            <p id="expansionStrategiesContent">Expand your business reach by tapping into new international markets. Tailored strategies for growth.</p>
+            
+            
+          </div>
+        </div>
+      </div>
+      <div class="col3">
+        <div class="item">
+          <div class="zoom">
+            <img src="Images/images7.jpg" alt="">
+          </div>
+          <div class="ItemText">
+            <h3 id="optimizationTitle"> SUPPLY CHAIN OPTIMIZATION</h3>
+            <p id="optimizationContent">Maximize efficiency and minimize costs in your supply chain. Data-driven insights for optimization.</p>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services1" class="sectionArea">
+  
+  <div class="servicesBody">
+    <div class="container">
+      <div class="col3">
+        <div class="item">
+          <div class="zoom">
+            <img src="Images/images9.png" alt="">
+          </div>
+          <div class="ItemText">
+            <h3 id="procurementServiceTitle">PROCUREMENT SERVICE</h3>
+            <p id="procurementServiceContent"> We can help you find the right suppliers for your needs at the best price very easily.</p>
+           
+
+          </div>
+        </div>
+      </div>
+      <div class="col3">
+        <div class="item">
+          <div class="zoom">
+            <img src="Images/images10.png" alt="">
+          </div>
+          <div class="ItemText">
+            <h3 id="logisticsServicesTitle">LOGISTICS SERVICES</h3>
+            <p id="logisticsServicesContent">Moving your goods from A to B is our specialty. We can help you with all your logistics needs..</p>
+           
+            
+          </div>
+        </div>
+      </div>
+      <div class="col3">
+        <div class="item">
+          <div class="zoom">
+            <img src="Images/images11.png" alt="">
+          </div>
+          <div class="ItemText">
+            <h3 id="consultingServicesTitle"> CONSULTING SERVICES</h3>
+            <p id="consultingServicesContent">We can help your business understand the local market and find the right suppliers for your needs.</p>
+           
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="benefits" class="sectionArea">
+  <div class="benefitsItem">
+    <div class="benefitsText">
+      <h4 id="internationalTradeConsultancyTitle">International Trade Consultancy</h4>
+      <p id="internationalTradeConsultancyContent">Expert advice on import and export regulations, market analysis, and competitive intelligence to help businesses in Ağrı expand their global reach and maximize profitability.</p>
+    </div>
+    <div class="benefitsImage">
+      <img src="Images/benefits1.jpg" alt="Benefit 1">
+    </div>
+  </div>
+
+  <div class="benefitsItem">
+    <div class="benefitsImage">
+      <img src="Images/benefits2.jpg" alt="Benefit 2">
+    </div>
+    <div class="benefitsText">
+      <h4 id="marketResearchTitle">Market Research and Analysis</h4>
+      <p id="marketResearchContent">Gain valuable insights for your import and export business in Ağrı through comprehensive market research and analysis. Identify market trends, evaluate competition, and make informed decisions to optimize your international trade strategy.</p>
+    </div>
+  </div>
+
+  <div class="benefitsItem">
+    <div class="benefitsText">
+      <h4 id="customsComplianceTitle">Customs Compliance Services</h4>
+      <p id="customsComplianceContent">Our expert team ensures that your import and export activities in Ağrı comply with all customs regulations and requirements. We handle all documentation, classifications, duties, and taxes, minimizing delays and avoiding penalties. Trust us to navigate the complex customs landscape and streamline your international trade operations.</p>
+    </div>
+    <div class="benefitsImage">
+      <img src="Images/benefits3.jpg" alt="Benefit 3">
+    </div>
+  </div>
+</section>
+
+<section id="why-choose-us" class="sectionArea">
+  <h2 class="sectionTitle" id="sectionTitle">Why Choose Us?</h2>
+  <div class="chooseUsItem">
+    <img src="Images/group.png" alt="Icon 1">
+    <h4 id="item1Title'">Our Professional Team</h4>
+    <p id="item1Content">We offer you the best service with our experienced and expert team.</p>
+  </div>
+
+  <div class="chooseUsItem">
+    <img src="Images/partnership.png" alt="Icon 2">
+    <h4 id="item2Title">Global Collaboration</h4>
+    <p id="item2Content">Influence global markets with a strong network of international partners.</p>
+  </div>
+
+  <div class="chooseUsItem">
+    <img src="Images/customer-service.png" alt="Icon 3">
+    <h4 id="item3Title">Excellent Service</h4>
+    <p id="item3Content">We offer excellent service by prioritizing customer satisfaction.</p>
+  </div>
+</section>
+<hr class="sectionSeparator">
+
+<section id="high-quality-service" class="sectionArea">
+  <div class="counterItem">
+    <div class="counterContent">
+      <img src="Images/support.png" alt="Another Icon">
+      <div class="counterText">
+        <h5 id="item4Title">24/7 Support Infrastructure</h5>
+      </div>
+    </div>
+  </div>
+  <div class="counterItem">
+    <div class="counterContent">
+      <img src="Images/tax.png" alt="Another Icon">
+      <div class="counterText">
+        <h5 id="item5Title">Customized solutions for your business</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h2 class="basliklar">Frequently Asked Questions</h2>
+    <section class="faq-section">
+        <div class="faq-column">
+            <div class="faq-box" onclick="toggleAnswer(1)">
+                <h3>What documents are required for customs clearance?</h3>
+                <div class="icon-container">
+                  <i class="fas fa-chevron-down icon"></i>
+              </div>
+                <div class="answer">
+                    <p>Documents such as invoice, transportation document, packing list are usually required for customs clearance</p>
+                </div>
+            </div>
+            <div class="faq-box" onclick="toggleAnswer(2)">
+                <h3>How are customs duties calculated?</h3>
+                <div class="icon-container">
+                  <i class="fas fa-chevron-down icon"></i>
+              </div>
+                <div class="answer">
+                    <p>Customs duties are usually calculated on the import value. The tax rate is determined using the customs tariff schedule.</p>
+                </div>
+            </div>
+            <div class="faq-box" onclick="toggleAnswer(3)">
+                <h3>How to fill out a customs declaration?</h3>
+                <div class="icon-container">
+                  <i class="fas fa-chevron-down icon"></i>
+              </div>
+                <div class="answer">
+                    <p>A customs declaration is an official document submitted to the customs authority for import or export transactions. It usually contains information such as product description, value, quantity and country of origin.</p>
+                </div>
+            </div>
+            <div class="faq-box" onclick="toggleAnswer(4)">
+                <h3>What is the difference between export and import processes?</h3>
+                <div class="icon-container">
+                  <i class="fas fa-chevron-down icon"></i>
+              </div>
+                <div class="answer">
+                    <p>Exporting is the process of sending goods or services from one country to another. Imports are the purchase of goods or services from one country to another. The main difference between the two processes is the direction of the goods or services.</p>
+                </div>
+            </div>
+            <div class="faq-box" onclick="toggleAnswer(5)">
+                <h3>What is customs warehousing and customs exemption?</h3>
+                <div class="icon-container">
+                  <i class="fas fa-chevron-down icon"></i>
+              </div>
+                <div class="answer">
+                    <p>Customs warehousing is the process of storing goods without paying customs duties. Customs exemption is the exemption of goods that meet certain conditions from customs duties.</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq-column">
+            <div class="faq-box" onclick="toggleAnswer(6)">
+                <h3>How can I follow the changes in customs legislation?</h3>
+                <div class="icon-container">
+                  <i class="fas fa-chevron-down icon"></i>
+              </div>
+                <div class="answer">
+                    <p>It is important to regularly check the official website of the customs authority and current announcements to keep abreast of changes in customs legislation.</p>
+                </div>
+            </div>
+            <div class="faq-box" onclick="toggleAnswer(7)">
+                <h3>What should I pay attention to during customs inspections?</h3>
+                <div class="icon-container">
+                  <i class="fas fa-chevron-down icon"></i>
+              </div>
+                <div class="answer">
+                    <p>During customs inspections, it is important to provide accurate and complete documentation, comply with customs administration instructions and be descriptive. In addition, the goods or services subject to inspection must comply with the customs declaration.</p>
+                </div>
+            </div>
+            <div class="faq-box" onclick="toggleAnswer(8)">
+                <h3>Why is it important to be compliant with customs legislation?</h3>
+                <div class="icon-container">
+                  <i class="fas fa-chevron-down icon"></i>
+              </div>
+                <div class="answer">
+                    <p>Compliance with customs legislation is important to comply with legal requirements and avoid possible penalties. It is also necessary to carry out transactions in a faster and more organized manner.</p>
+                </div>
+            </div>
+            <div class="faq-box" onclick="toggleAnswer(9)">
+                <h3>What are special customs regimes?</h3>
+                <div class="icon-container">
+                  <i class="fas fa-chevron-down icon"></i>
+              </div>
+                <div class="answer">
+                    <p>Special customs regimes are special arrangements that provide exemption or reduction of customs duties under certain conditions. Examples include the free circulation regime or customs union agreements.</p>
+                </div>
+            </div>
+            <div class="faq-box" onclick="toggleAnswer(10)">
+                <h3>How should a customs broker be selected?</h3>
+                <div class="icon-container">
+                  <i class="fas fa-chevron-down icon"></i>
+              </div>
+                <div class="answer">
+                    <p>When choosing a customs broker, it is important to consider factors such as experience, areas of expertise, references and communication skills. In addition, the service fee offered by the customs broker should also be taken into account.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bottom-section2">
+      <div class="slogan">Boğaziçi Gümrükleme: Break Boundaries, Make Things Easier.</div>
+      <div class="contact-info2">
+          <p class="infoTel">+90 123 456 7890</p>
+          <p>Don't forget to get an offer from us.</p>
+      </div>
+  </div>
+
+  <footer class="footer-section">
+    <div class="company-info">
+      <h2>BOĞAZİÇİ GÜMRÜKLEME İTH.İHR.TURİZM PET.ÜR.SAN VE TİC.LTD.ŞTİ</h2>
+      <p>Address:  ÇİFTEPINAR NEIGHBORHOOD INEGOL STREET ARAS BUSINESS CENTER NO:32/5
+        DOĞUBAYAZIT / AĞRI
+        </p>
+      <p>Telephone: 123456789</p>
+      <p>Email: info@example.com</p>
+    </div>
+  
+    <div class="quick-menu">
+      <h2>QUICK MENU</h2>
+      <ul>
+        <li onclick="window.location.href='index.html'"><i class="fas fa-chevron-right"></i>Home Page</li>
+        <li onclick="window.location.href='aboutus.html'"><i class="fas fa-chevron-right"></i>About Us</li>
+        <li onclick="window.location.href='service.html'"><i class="fas fa-chevron-right"></i>Our Services</li>
+        <li onclick="window.location.href='quality.html'"><i class="fas fa-chevron-right"></i>Our Quality Policy</li>
+        <li onclick="window.location.href='contact.html'"><i class="fas fa-chevron-right"></i>Contact</li>
+      </ul>
+    </div>
+  
+    <div class="services3">
+      <h2>OUR SERVICES</h2>
+      <ul>
+        <li onclick="window.location.href='ithalat.html'"><i class="fas fa-chevron-right"></i>Import Services</li>
+        <li onclick="window.location.href='ihracat.html'"><i class="fas fa-chevron-right"></i>Export Services</li>
+        <li onclick="window.location.href='transit.html'"><i class="fas fa-chevron-right"></i>Transit Custom Services</li>
+        <li onclick="window.location.href='antrepo.html'"><i class="fas fa-chevron-right"></i>Antrepo Services</li>
+        <li onclick="window.location.href='digital.html'"><i class="fas fa-chevron-right"></i>Digital Archiving</li>
+        <li onclick="window.location.href='danismanlik.html'"><i class="fas fa-chevron-right"></i>Consultancy Services</li>
+      </ul>
+    </div>
+    <div class="useful-info2">
+      <h2>USEFUL INFORMATION</h2>
+      <ul>
+        <li onclick="window.location.href='gumrukrehber.html'"><i class="fas fa-chevron-right"></i>Customs Guide</li>
+        <li><a href="https://uygulama.gtb.gov.tr/BeyannameSorgulama/" target="_blank"><i class="fas fa-chevron-right"></i>Declaration Inquiry</a></li>
+        <li><a href="https://webgumruk.com/authentication/login.xhtml" target="_blank"><i class="fas fa-chevron-right"></i>Web Customs</a></li>
+        <li><a href="https://ticaret.gov.tr/gumruk-islemleri/mevzuat" target="_blank"><i class="fas fa-chevron-right"></i>Legislation</a></li>
+      </ul>
+    </div>
+  </footer>
+  <div id="scroll-to-top" onclick="scrollToTop()">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  
+  <div class="contact-buttonnn mail-button" onclick="redirectToEmail()">
+    <i class="far fa-envelope"></i>
+  </div>
+  
+  <div class="contact-buttonnnn phone-button" onclick="redirectToPhone()">
+    <i class="fas fa-phone"></i>
+  </div>
+<script src="script.js"></script>
+<script src="anasayfatrans.js"></script>
+
+
+
+</body>
+</html>

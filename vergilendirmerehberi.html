@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/039f4de4bf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fjalla+One&family=Libre+Baskerville&family=Lusitana&family=Montserrat&family=Nunito:wght@300;500&family=Open+Sans&family=Poppins&family=Raleway&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
+
+  
+</head>
+<body>
+  <div class="contact-info-bar">
+    <p id="email2">
+        <i class="far fa-envelope"></i> <a href="mailto:info@example.com">SEND EMAIL</a>
+    </p>
+    <span class="vertical-line"></span>
+    <p id="phone">
+        <i class="fas fa-phone"></i> <a href="tel:+901234567890">+90 123 456 7890</a>
+    </p>  
+    <span class="vertical-line"></span>
+    <p id="location">
+        <i class="fas fa-map-marker-alt"></i>DOGUBAYAZIT/AGRI
+    </p> 
+   
+    <div class="language-buttons">
+      <button onclick="changeLanguage('tr')">
+        <img src="Images/turk.png" alt="Turkish Flag">
+      </button>
+      <button onclick="changeLanguage('en')">
+        <img src="Images/ingiliz.png" alt="English Flag">
+      </button>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button onclick="performSearch()">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+</div>
+<header class="ust">
+  <div class="container1">
+    <div class="logo">
+      <img src="Images/beyaz.png" alt="">
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html" id="home"> <i class="fas fa-home"></i> HOME PAGE</a></li>
+        <li class="dropdown5">
+          <a href="aboutus.html" id="aboutDropdown" class="dropbtn5"> ABOUT US<i class="fas fa-caret-down"></i></a>
+          <div class="dropdown5-content" id="aboutDropdownContent">
+              <a href="misyon.html" id="ourMission"><i class="fas fa-chevron-left"></i> Our Mission</a>
+              <a href="vizyon.html" id="ourVision"> <i class="fas fa-chevron-left"></i>Our Vision </a>
+          </div>
+      </li>
+        <li class="dropdown2">
+          <a href="service.html" id="ourServices3" class="dropbtn2"> OUR SERVICES <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown2-content">
+            <a href="#" onclick="changePage('ithalat.html')" id="importServices"> <i class="fas fa-chevron-left"></i> IMPORT SERVICES</a>
+            <a href="#" onclick="changePage('ihracat.html')" id="exportServices"> <i class="fas fa-chevron-left"></i> EXPORT SERVICES</a>
+            <a href="#" onclick="changePage('transit.html')" id="transitCustomServices"> <i class="fas fa-chevron-left"></i> TRANSIT CUSTOM SERVICES</a>
+            <a href="#" onclick="changePage('antrepo.html')" id="antrepoServices"> <i class="fas fa-chevron-left"></i> ANTREPO SERVICES</a>
+            <a href="#" onclick="changePage('digital.html')" id="digitalArchiving"> <i class="fas fa-chevron-left"></i> DIGITAL ARCHIVING</a>
+            <a href="#" onclick="changePage('danismanlik.html')" id="consultancyServices"> <i class="fas fa-chevron-left"></i> CONSULTANCY SERVICES</a>
+          </div>
+        </li>
+        <li><a href="quality.html" id="qualityPolicy">  OUR QUALITY POLICY</a></li>
+        <li class="dropdown-legislation">
+       <a href="#" id="legislationMENU">USEFUL INFO <i class="fas fa-caret-down"></i></a>
+       <div class="dropdown-legislation-content">
+       <a href="gumrukrehber.html"><i class="fas fa-chevron-left" id="customsGuide"></i> Customs Guide</a>
+       <a href="https://uygulama.gtb.gov.tr/BeyannameSorgulama/" target="_blank" id="declarationInquiry"><i class="fas fa-chevron-left"></i>Declaration Inquiry</a>
+       <a href="https://webgumruk.com/authentication/login.xhtml" target="_blank"><i class="fas fa-chevron-left" id="webCustoms"></i>Web Customs</a>
+       <a href="https://ticaret.gov.tr/gumruk-islemleri/mevzuat" target="_blank"><i class="fas fa-chevron-left" id="legislationLink"></i>Legislation</a>
+       
+    <!-- Diğer legislation sayfalarını ekleyebilirsiniz -->
+      </div>
+      </li>
+        <li><a href="contact.html" id="contactUs">  CONTACT US</a></li>
+      
+      </ul>
+    </div>
+    <!-- Eklenen mobil menü düğmesi -->
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+    <section class="vergilendirme">
+        <div class="overlayvergi"></div>
+        <div class="contentvergi">
+    
+          <div class="titlevergi">Taxation Guide</div>
+
+          <div class="questionq7">
+            <p>How are customs duties calculated?</p>
+            <div class="answeeer7">
+              Customs duties are calculated based on the customs value of the imported goods, import regime, and other factors.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>Which taxes are levied on import transactions?</p>
+            <div class="answeeer7">
+              Import transactions generally incur taxes such as customs duties, VAT (Value Added Tax), and excise duty.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>What is the taxation procedure of the customs administration for imports?</p>
+            <div class="answeeer7">
+              The customs administration carries out taxation procedures for imports in accordance with the customs tariff schedule and other regulations.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>Under what circumstances can penalties be imposed by the customs administration?</p>
+            <div class="answeeer7">
+              The customs administration may impose penalties on individuals who fail to comply with customs rules or provide incomplete declarations.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>Can you contest customs duties and fines notified for payment?</p>
+            <div class="answeeer7">
+              Yes, you have the right to contest customs duties and fines that you are required to pay. The objection should be submitted in writing to the customs administration.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>What happens if you fail to pay customs duties on time?</p>
+            <div class="answeeer7">
+              If you fail to pay customs duties on time, late payment interest may apply, and your customs procedures may be suspended.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>Can you reclaim paid customs duties and fines?</p>
+            <div class="answeeer7">
+              You may have the chance to reclaim or request a reduction in paid customs duties and fines under certain circumstances.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>Under what conditions do accrued but unpaid customs duties and fines disappear?</p>
+            <div class="answeeer7">
+              Accrued but unpaid customs duties and fines may be extinguished under certain conditions, such as reaching a settlement.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>Under what circumstances is a refund or removal process conducted?</p>
+            <div class="answeeer7">
+              The refund or removal process related to customs duties or fines can be initiated upon request or at the initiative of the customs administration under specific circumstances.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>When should refund or removal procedures be carried out?</p>
+            <div class="answeeer7">
+              Refund or removal procedures are generally requested within a certain period after the accrual of customs duties or fines.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>Which authority is responsible for refund or removal procedures?</p>
+            <div class="answeeer7">
+              Refund or removal procedures are typically conducted by the customs administration or the relevant authority.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>How is an application for refund or removal made?</p>
+            <div class="answeeer7">
+              An application for refund or removal is submitted in writing to the customs administration and must be supported by the necessary documents.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>What should be done if it is realized that customs duties were undercharged or not charged as required due to your customs procedures?</p>
+            <div class="answeeer7">
+              If it is realized that customs duties were undercharged or not charged as required due to your customs procedures, the customs administration may undertake correction measures.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>Can reductions be applied to customs duties and fines arising from your customs procedures?</p>
+            <div class="answeeer7">
+              Reductions can be requested in certain situations for customs duties and fines arising from your customs procedures.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>Which taxes and fines fall within the scope of settlement?</p>
+            <div class="answeeer7">
+              Under certain circumstances, customs duties and fines may fall within the scope of settlement, and an agreement can be reached between the parties.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>When and how can a settlement be requested?</p>
+            <div class="answeeer7">
+              A settlement request is typically made in writing to the customs administration within a certain period after the accrual of customs duties or fines.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>What conditions are necessary to request a settlement?</p>
+            <div class="answeeer7">
+              To request a settlement, an application can be made for customs duties or fines above a certain amount. Additionally, conditions such as correcting errors or special circumstances may be required.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>How is a settlement request evaluated?</p>
+            <div class="answeeer7">
+              A settlement request is examined by the customs administration, and if deemed appropriate based on the claims of the applicant, a settlement may be reached.
+            </div>
+          </div>
+      
+          <div class="questionq7">
+            <p>What is the outcome of the evaluation of a settlement request?</p>
+            <div class="answeeer7">
+              The evaluation of a settlement request results in the acceptance of the settlement by the customs administration and specifies under what conditions the settlement is accepted.
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="company-info">
+          <h2>BOĞAZİÇİ GÜMRÜKLEME İTH.İHR.TURİZM PET.ÜR.SAN VE TİC.LTD.ŞTİ</h2>
+          <p>Address:  ÇİFTEPINAR NEIGHBORHOOD INEGOL STREET ARAS BUSINESS CENTER NO:32/5
+            DOĞUBAYAZIT / AĞRI
+            </p>
+          <p>Telephone: 123456789</p>
+          <p>Email: info@example.com</p>
+        </div>
+      
+        <div class="quick-menu">
+          <h2>QUICK MENU</h2>
+          <ul>
+            <li onclick="window.location.href='index.html'"><i class="fas fa-chevron-right"></i>Home Page</li>
+            <li onclick="window.location.href='aboutus.html'"><i class="fas fa-chevron-right"></i>About Us</li>
+            <li onclick="window.location.href='service.html'"><i class="fas fa-chevron-right"></i>Our Services</li>
+            <li onclick="window.location.href='quality.html'"><i class="fas fa-chevron-right"></i>Our Quality Policy</li>
+            <li onclick="window.location.href='contact.html'"><i class="fas fa-chevron-right"></i>Contact</li>
+          </ul>
+        </div>
+      
+        <div class="services3">
+          <h2>OUR SERVICES</h2>
+          <ul>
+            <li onclick="window.location.href='ithalat.html'"><i class="fas fa-chevron-right"></i>Import Services</li>
+            <li onclick="window.location.href='ihracat.html'"><i class="fas fa-chevron-right"></i>Export Services</li>
+            <li onclick="window.location.href='transit.html'"><i class="fas fa-chevron-right"></i>Transit Custom Services</li>
+            <li onclick="window.location.href='antrepo.html'"><i class="fas fa-chevron-right"></i>Antrepo Services</li>
+            <li onclick="window.location.href='digital.html'"><i class="fas fa-chevron-right"></i>Digital Archiving</li>
+            <li onclick="window.location.href='danismanlik.html'"><i class="fas fa-chevron-right"></i>Consultancy Services</li>
+          </ul>
+        </div>
+        <div class="useful-info2">
+          <h2>USEFUL INFORMATION</h2>
+          <ul>
+            <li onclick="window.location.href='gumrukrehber.html'"><i class="fas fa-chevron-right"></i>Customs Guide</li>
+            <li><a href="https://uygulama.gtb.gov.tr/BeyannameSorgulama/" target="_blank"><i class="fas fa-chevron-right"></i>Declaration Inquiry</a></li>
+            <li><a href="https://webgumruk.com/authentication/login.xhtml" target="_blank"><i class="fas fa-chevron-right"></i>Web Customs</a></li>
+            <li><a href="https://ticaret.gov.tr/gumruk-islemleri/mevzuat" target="_blank"><i class="fas fa-chevron-right"></i>Legislation</a></li>
+          </ul>
+        </div>
+      </footer>
+<div id="scroll-to-top" onclick="scrollToTop()">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+<div class="contact-buttonnn mail-button" onclick="redirectToEmail()">
+  <i class="far fa-envelope"></i>
+</div>
+
+<div class="contact-buttonnnn phone-button" onclick="redirectToPhone()">
+  <i class="fas fa-phone"></i>
+</div>
+
+<script src="vergitrans.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

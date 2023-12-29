@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/039f4de4bf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fjalla+One&family=Libre+Baskerville&family=Lusitana&family=Montserrat&family=Nunito:wght@300;500&family=Open+Sans&family=Poppins&family=Raleway&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
+
+  
+</head>
+<body>
+  <div class="contact-info-bar">
+    <p id="email2">
+        <i class="far fa-envelope"></i> <a href="mailto:info@example.com">SEND EMAIL</a>
+    </p>
+    <span class="vertical-line"></span>
+    <p id="phone">
+        <i class="fas fa-phone"></i> <a href="tel:+901234567890">+90 123 456 7890</a>
+    </p>  
+    <span class="vertical-line"></span>
+    <p id="location">
+        <i class="fas fa-map-marker-alt"></i>DOGUBAYAZIT/AGRI
+    </p> 
+   
+    <div class="language-buttons">
+      <button onclick="changeLanguage('tr')">
+        <img src="Images/turk.png" alt="Turkish Flag">
+      </button>
+      <button onclick="changeLanguage('en')">
+        <img src="Images/ingiliz.png" alt="English Flag">
+      </button>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button onclick="performSearch()">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+</div>
+<header class="ust">
+  <div class="container1">
+    <div class="logo">
+      <img src="Images/beyaz.png" alt="">
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html" id="home"> <i class="fas fa-home"></i> HOME PAGE</a></li>
+        <li class="dropdown5">
+          <a href="aboutus.html" id="aboutDropdown" class="dropbtn5"> ABOUT US<i class="fas fa-caret-down"></i></a>
+          <div class="dropdown5-content" id="aboutDropdownContent">
+              <a href="misyon.html" id="ourMission"><i class="fas fa-chevron-left"></i> Our Mission</a>
+              <a href="vizyon.html" id="ourVision"> <i class="fas fa-chevron-left"></i>Our Vision </a>
+          </div>
+      </li>
+        <li class="dropdown2">
+          <a href="service.html" id="ourServices3" class="dropbtn2"> OUR SERVICES <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown2-content">
+            <a href="#" onclick="changePage('ithalat.html')" id="importServices"> <i class="fas fa-chevron-left"></i> IMPORT SERVICES</a>
+            <a href="#" onclick="changePage('ihracat.html')" id="exportServices"> <i class="fas fa-chevron-left"></i> EXPORT SERVICES</a>
+            <a href="#" onclick="changePage('transit.html')" id="transitCustomServices"> <i class="fas fa-chevron-left"></i> TRANSIT CUSTOM SERVICES</a>
+            <a href="#" onclick="changePage('antrepo.html')" id="antrepoServices"> <i class="fas fa-chevron-left"></i> ANTREPO SERVICES</a>
+            <a href="#" onclick="changePage('digital.html')" id="digitalArchiving"> <i class="fas fa-chevron-left"></i> DIGITAL ARCHIVING</a>
+            <a href="#" onclick="changePage('danismanlik.html')" id="consultancyServices"> <i class="fas fa-chevron-left"></i> CONSULTANCY SERVICES</a>
+          </div>
+        </li>
+        <li><a href="quality.html" id="qualityPolicy">  OUR QUALITY POLICY</a></li>
+        <li class="dropdown-legislation">
+       <a href="#" id="legislationMENU">USEFUL INFO <i class="fas fa-caret-down"></i></a>
+       <div class="dropdown-legislation-content">
+       <a href="gumrukrehber.html"><i class="fas fa-chevron-left" id="customsGuide"></i> Customs Guide</a>
+       <a href="https://uygulama.gtb.gov.tr/BeyannameSorgulama/" target="_blank" id="declarationInquiry"><i class="fas fa-chevron-left"></i>Declaration Inquiry</a>
+       <a href="https://webgumruk.com/authentication/login.xhtml" target="_blank"><i class="fas fa-chevron-left" id="webCustoms"></i>Web Customs</a>
+       <a href="https://ticaret.gov.tr/gumruk-islemleri/mevzuat" target="_blank"><i class="fas fa-chevron-left" id="legislationLink"></i>Legislation</a>
+       
+    <!-- Diğer legislation sayfalarını ekleyebilirsiniz -->
+      </div>
+      </li>
+        <li><a href="contact.html" id="contactUs">  CONTACT US</a></li>
+      
+      </ul>
+    </div>
+    <!-- Eklenen mobil menü düğmesi -->
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+
+    <section class="bilgiRehberi">
+        <div class="overlayBilgi"></div>
+        <div class="contentBilgirehber">
+    
+          <div class="titleBilgiRehber">Customs and Trade Guide</div>
+
+          <!-- Information Guide -->
+          <div class="questionq11">
+            <p>What is Duty-Free Export?</p>
+            <div class="answeeer11">
+              Duty-free export is a type of export where no payment is received for the goods, usually conducted for special circumstances or aid purposes.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>What does Declaration Control mean?</p>
+            <div class="answeeer11">
+              Declaration control is the examination by customs authorities to verify the accuracy and appropriateness of the customs declaration. It is a crucial stage in the customs process.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>What does "Intellectual and Industrial Property Rights" mean?</p>
+            <div class="answeeer11">
+              Intellectual and industrial property rights refer to the rights a person holds over products resulting from creative or commercial activities. This includes rights such as patents, trademarks, and copyrights.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>What is Temporary Export?</p>
+            <div class="answeeer11">
+              Temporary export is the practice of sending goods out of a country for a specific period but returning them in the same form or with modifications later.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>What is Temporary Import?</p>
+            <div class="answeeer11">
+              Temporary import is the practice of bringing goods into a foreign country for a specific period but sending them back in the same form or with modifications later.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>What is Returned Goods?</p>
+            <div class="answeeer11">
+              Returned goods are items or products that were previously exported but are brought back within a specific period. This often involves temporary export and import processes.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>Who is a Customs Consultant?</p>
+            <div class="answeeer11">
+              A customs consultant is a professional specialized in customs procedures and regulations. They represent companies or individuals in customs procedures and provide consultancy services.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>What are Customs Approved Operation or Use and Customs Regimes?</p>
+            <div class="answeeer11">
+              Customs Approved Operation or Use is a customs regime that grants authorization to businesses with a specific status to import or export within a certain period.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>What is Service Export?</p>
+            <div class="answeeer11">
+              Service export refers to the services provided by a resident firm or individual to a customer in another country. It emphasizes service trade rather than goods trade.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>About Exporters' Associations</p>
+            <div class="answeeer11">
+              Exporters' associations are trade organizations that focus on similar industries or sectors, promoting collaboration among member firms. They work to protect the interests of exporters.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>What are Lists Attached to Import Regime Decision?</p>
+            <div class="answeeer11">
+              Lists Attached to Import Regime Decision are official documents specifying the tax rates, quotas, and other regulations applicable to the import of a particular product.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>What is Refund of Dues?</p>
+            <div class="answeeer11">
+              Refund of dues is a request for the full or partial refund of customs duties paid on a previous date for a particular item or goods.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>What does Final Use mean?</p>
+            <div class="answeeer11">
+              Final use refers to the import of goods for a specific purpose, with approval from customs authorities for the intended use.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>What is a Proforma Invoice?</p>
+            <div class="answeeer11">
+              A proforma invoice is a special type of invoice used in international trade that includes the price, quantity, and other essential information about a product.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>What is Summary Declaration?</p>
+            <div class="answeeer11">
+              Summary declaration is a short and concise declaration form used to expedite customs procedures, representing import or export.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>What is a Free Zone?</p>
+            <div class="answeeer11">
+              A free zone is a specific geographic area where trade of goods and services occurs without customs duties and other trade barriers.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>What is Border Trade?</p>
+            <div class="answeeer11">
+              Border trade refers to trade activities that take place in border areas between two countries. It is often subject to specific regulations.
+            </div>
+          </div>
+      
+          <div class="questionq11">
+            <p>What is Liquidation?</p>
+            <div class="answeeer11">
+              Liquidation is the process of selling a company's assets and using the proceeds to pay off its debts. In the customs context, it may involve paying taxes or customs fees on goods.
+            </div>
+          </div>
+          
+          <div class="questionq11">
+            <p>What is Single Window System?</p>
+            <div class="answeeer11">
+              Single Window System is a system where trade transactions are conducted through a single platform. It aims to simplify processes and reduce bureaucratic procedures in trade.
+            </div>
+          </div>
+          
+          <div class="questionq11">
+            <p>What does "Preferential Trade" mean?</p>
+            <div class="answeeer11">
+              Preferential trade relies on the trade advantages recognized by two or more countries in their trade, often involving trade agreements with customs duty reductions or exemptions.
+            </div>
+          </div>
+          
+          <div class="questionq11">
+            <p>What does the "Free Circulation of Goods" principle, one of the fundamental principles of Customs Union, mean?</p>
+            <div class="answeeer11">
+              In Customs Union, the principle of the free circulation of goods means allowing a good legally sold in one member country to circulate freely in other member countries without hindrance. It aims to liberalize trade and unify the internal market.
+            </div>
+          </div>
+          
+          <div class="questionq11">
+            <p>Payment Methods in International Trade</p>
+            <div class="answeeer11">
+              Various payment methods exist in international trade:
+              
+              <ul>
+                <li><strong>Open Account:</strong> The seller receives payment within a specified period after delivering the goods.</li>
+                <li><strong>Letter of Credit (L/C):</strong> The buyer provides a bank guarantee for payment; the seller receives payment by presenting specific documents.</li>
+                <li><strong>Letter of Guarantee:</strong> The bank provides a letter of guarantee that the buyer will make the payment.</li>
+                <li><strong>Cash in Advance:</strong> The buyer makes payment before the goods are shipped.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="questionq11">
+            <p>Delivery Terms in International Trade</p>
+            <div class="answeeer11">
+              Common delivery terms in international trade include:
+              
+              <ul>
+                <li><strong>EXW (Ex Works):</strong> The seller delivers the goods at the production site or warehouse.</li>
+                <li><strong>FOB (Free on Board):</strong> The seller delivers the goods to a specified port; transportation costs are the buyer's responsibility.</li>
+                <li><strong>CIF (Cost, Insurance and Freight):</strong> The seller delivers the goods to a specified port with transportation, insurance, and freight costs included.</li>
+                <li><strong>DDP (Delivered Duty Paid):</strong> The seller delivers the goods to a specified location, including customs duties.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="questionq11">
+            <p>What is the Obligee Record and Tracking System?</p>
+            <div class="answeeer11">
+              The Obligee Record and Tracking System is a system where documents related to customs procedures and trade activities are recorded and tracked electronically. This system helps manage transactions more transparently and efficiently.
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <footer class="footer-section">
+        <div class="company-info">
+          <h2>BOĞAZİÇİ GÜMRÜKLEME İTH.İHR.TURİZM PET.ÜR.SAN VE TİC.LTD.ŞTİ</h2>
+          <p>Address:  ÇİFTEPINAR NEIGHBORHOOD INEGOL STREET ARAS BUSINESS CENTER NO:32/5
+            DOĞUBAYAZIT / AĞRI
+            </p>
+          <p>Telephone: 123456789</p>
+          <p>Email: info@example.com</p>
+        </div>
+      
+        <div class="quick-menu">
+          <h2>QUICK MENU</h2>
+          <ul>
+            <li onclick="window.location.href='index.html'"><i class="fas fa-chevron-right"></i>Home Page</li>
+            <li onclick="window.location.href='aboutus.html'"><i class="fas fa-chevron-right"></i>About Us</li>
+            <li onclick="window.location.href='service.html'"><i class="fas fa-chevron-right"></i>Our Services</li>
+            <li onclick="window.location.href='quality.html'"><i class="fas fa-chevron-right"></i>Our Quality Policy</li>
+            <li onclick="window.location.href='contact.html'"><i class="fas fa-chevron-right"></i>Contact</li>
+          </ul>
+        </div>
+      
+        <div class="services3">
+          <h2>OUR SERVICES</h2>
+          <ul>
+            <li onclick="window.location.href='ithalat.html'"><i class="fas fa-chevron-right"></i>Import Services</li>
+            <li onclick="window.location.href='ihracat.html'"><i class="fas fa-chevron-right"></i>Export Services</li>
+            <li onclick="window.location.href='transit.html'"><i class="fas fa-chevron-right"></i>Transit Custom Services</li>
+            <li onclick="window.location.href='antrepo.html'"><i class="fas fa-chevron-right"></i>Antrepo Services</li>
+            <li onclick="window.location.href='digital.html'"><i class="fas fa-chevron-right"></i>Digital Archiving</li>
+            <li onclick="window.location.href='danismanlik.html'"><i class="fas fa-chevron-right"></i>Consultancy Services</li>
+          </ul>
+        </div>
+        <div class="useful-info2">
+          <h2>USEFUL INFORMATION</h2>
+          <ul>
+            <li onclick="window.location.href='gumrukrehber.html'"><i class="fas fa-chevron-right"></i>Customs Guide</li>
+            <li><a href="https://uygulama.gtb.gov.tr/BeyannameSorgulama/" target="_blank"><i class="fas fa-chevron-right"></i>Declaration Inquiry</a></li>
+            <li><a href="https://webgumruk.com/authentication/login.xhtml" target="_blank"><i class="fas fa-chevron-right"></i>Web Customs</a></li>
+            <li><a href="https://ticaret.gov.tr/gumruk-islemleri/mevzuat" target="_blank"><i class="fas fa-chevron-right"></i>Legislation</a></li>
+          </ul>
+        </div>
+      </footer>
+<div id="scroll-to-top" onclick="scrollToTop()">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+<div class="contact-buttonnn mail-button" onclick="redirectToEmail()">
+  <i class="far fa-envelope"></i>
+</div>
+
+<div class="contact-buttonnnn phone-button" onclick="redirectToPhone()">
+  <i class="fas fa-phone"></i>
+</div>
+
+<script src="bilgirehberi.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/039f4de4bf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fjalla+One&family=Libre+Baskerville&family=Lusitana&family=Montserrat&family=Nunito:wght@300;500&family=Open+Sans&family=Poppins&family=Raleway&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
+
+  
+</head>
+<body>
+  <div class="contact-info-bar">
+    <p id="email2">
+        <i class="far fa-envelope"></i> <a href="mailto:info@example.com">SEND EMAIL</a>
+    </p>
+    <span class="vertical-line"></span>
+    <p id="phone">
+        <i class="fas fa-phone"></i> <a href="tel:+901234567890">+90 123 456 7890</a>
+    </p>  
+    <span class="vertical-line"></span>
+    <p id="location">
+        <i class="fas fa-map-marker-alt"></i>DOGUBAYAZIT/AGRI
+    </p> 
+   
+    <div class="language-buttons">
+      <button onclick="changeLanguage('tr')">
+        <img src="Images/turk.png" alt="Turkish Flag">
+      </button>
+      <button onclick="changeLanguage('en')">
+        <img src="Images/ingiliz.png" alt="English Flag">
+      </button>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button onclick="performSearch()">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+</div>
+<header class="ust">
+  <div class="container1">
+    <div class="logo">
+      <img src="Images/beyaz.png" alt="">
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html" id="home"> <i class="fas fa-home"></i> HOME PAGE</a></li>
+        <li class="dropdown5">
+          <a href="aboutus.html" id="aboutDropdown" class="dropbtn5"> ABOUT US<i class="fas fa-caret-down"></i></a>
+          <div class="dropdown5-content" id="aboutDropdownContent">
+              <a href="misyon.html" id="ourMission"><i class="fas fa-chevron-left"></i> Our Mission</a>
+              <a href="vizyon.html" id="ourVision"> <i class="fas fa-chevron-left"></i>Our Vision </a>
+          </div>
+      </li>
+        <li class="dropdown2">
+          <a href="service.html" id="ourServices3" class="dropbtn2"> OUR SERVICES <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown2-content">
+            <a href="#" onclick="changePage('ithalat.html')" id="importServices"> <i class="fas fa-chevron-left"></i> IMPORT SERVICES</a>
+            <a href="#" onclick="changePage('ihracat.html')" id="exportServices"> <i class="fas fa-chevron-left"></i> EXPORT SERVICES</a>
+            <a href="#" onclick="changePage('transit.html')" id="transitCustomServices"> <i class="fas fa-chevron-left"></i> TRANSIT CUSTOM SERVICES</a>
+            <a href="#" onclick="changePage('antrepo.html')" id="antrepoServices"> <i class="fas fa-chevron-left"></i> ANTREPO SERVICES</a>
+            <a href="#" onclick="changePage('digital.html')" id="digitalArchiving"> <i class="fas fa-chevron-left"></i> DIGITAL ARCHIVING</a>
+            <a href="#" onclick="changePage('danismanlik.html')" id="consultancyServices"> <i class="fas fa-chevron-left"></i> CONSULTANCY SERVICES</a>
+          </div>
+        </li>
+        <li><a href="quality.html" id="qualityPolicy">  OUR QUALITY POLICY</a></li>
+        <li class="dropdown-legislation">
+       <a href="#" id="legislationMENU">USEFUL INFO <i class="fas fa-caret-down"></i></a>
+       <div class="dropdown-legislation-content">
+       <a href="gumrukrehber.html"><i class="fas fa-chevron-left" id="customsGuide"></i> Customs Guide</a>
+       <a href="https://uygulama.gtb.gov.tr/BeyannameSorgulama/" target="_blank" id="declarationInquiry"><i class="fas fa-chevron-left"></i>Declaration Inquiry</a>
+       <a href="https://webgumruk.com/authentication/login.xhtml" target="_blank"><i class="fas fa-chevron-left" id="webCustoms"></i>Web Customs</a>
+       <a href="https://ticaret.gov.tr/gumruk-islemleri/mevzuat" target="_blank"><i class="fas fa-chevron-left" id="legislationLink"></i>Legislation</a>
+       
+    <!-- Diğer legislation sayfalarını ekleyebilirsiniz -->
+      </div>
+      </li>
+        <li><a href="contact.html" id="contactUs">  CONTACT US</a></li>
+      
+      </ul>
+    </div>
+    <!-- Eklenen mobil menü düğmesi -->
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+
+    <section class="containerKiymet">
+        <div class="overlayKiymet"></div>
+        <div class="contentKiymet">
+    
+          <div class="titleKiymet">Value Guide</div>
+
+          <div class="questionq10">
+            <p>Customs Value of Goods</p>
+            <div class="answeeer10">
+              The customs value of goods is a fundamental concept in calculating customs duties and generally represents the value of the goods.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>Why is the concept of "Customs Value" important?</p>
+            <div class="answeeer10">
+              Customs value is a crucial factor in calculating import and customs duties. Accurate declaration of customs value ensures fair taxation and the orderly conduct of trade.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>How is the customs value determined?</p>
+            <div class="answeeer10">
+              The customs value is typically calculated using a formula that includes elements such as the selling price, transportation, and insurance costs.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>How is the customs value declared to customs authorities?</p>
+            <div class="answeeer10">
+              The customs value is declared on the customs declaration by the importer or declarant. The declared value may be subject to verification by customs authorities.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>Which exchange rate is used when determining the customs value of goods?</p>
+            <div class="answeeer10">
+              Generally, exchange rates are used when determining the customs value of goods. These rates can be daily rates from international financial markets or specific reference date rates.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>How is the customs value of goods determined using different methods?</p>
+            <div class="answeeer10">
+              The customs value of goods can be determined using various methods, such as the transaction value method, deduction method, computed value method, etc. Each method has its own rules and advantages.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>What does "Customs value according to the transaction value method" mean?</p>
+            <div class="answeeer10">
+              The transaction value method is a way of determining the customs value based on the selling price of the goods. The customs value is calculated based on the market where the goods are sold or will be sold.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>What does the term "Actually paid or payable price" mean?</p>
+            <div class="answeeer10">
+              This term is considered when calculating the customs value according to the transaction value method. The actually paid or payable price refers to the real commercial value between the buyer and the seller.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>What do "Identical goods" and "Similar goods" mean?</p>
+            <div class="answeeer10">
+              Identical goods refer to goods that are entirely the same in characteristics, while similar goods refer to goods with very similar characteristics. These concepts are important when calculating the customs value.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>What does "Customs value according to the transaction value method for identical goods" mean?</p>
+            <div class="answeeer10">
+              This concept explains how the customs value is determined for identical goods when sold to different buyers or sellers. It outlines the methodology for calculating the customs value.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>What does "Customs value according to the transaction value method for similar goods" mean?</p>
+            <div class="answeeer10">
+              This concept explains how the customs value is determined for similar goods, considering very close characteristics. The price of similar goods can be used as a reference in this method.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>What does "Deduction method for customs value" mean?</p>
+            <div class="answeeer10">
+              The deduction method is a way of determining the customs value based on the transaction value method. Certain deductions made under specific conditions are taken into account.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>What does "Computed value method for customs value" mean?</p>
+            <div class="answeeer10">
+              The computed value method is used when the customs value cannot be determined by other methods. In this method, the customs value is calculated considering cost elements, profit, and other factors.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>What does "Fallback method for customs value" mean?</p>
+            <div class="answeeer10">
+              The fallback method is used when a customs value cannot be determined by other methods. In this method, if possible, the customs value determined by other methods in a previous similar period is taken as a reference.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>How is the customs value of data or command-loaded information carriers imported for use in computers determined?</p>
+            <div class="answeeer10">
+              The customs value of such products is usually determined by considering cost elements, profit, and other factors. The importer can provide documents explaining the features and usage of these products.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>What does "Royalty and License Fee" mean?</p>
+            <div class="answeeer10">
+              Royalty and license fee refer to the fee paid for the right to use a product or a brand. These payments can be taken into account when calculating customs value.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>What happens if the rules regarding the determination of the customs value of goods are not followed?</p>
+            <div class="answeeer10">
+              If incorrect or incomplete information is provided in the customs value declaration, customs authorities may conduct an examination. Providing false information may result in penalties or tax violations.
+            </div>
+          </div>
+      
+          <div class="questionq10">
+            <p>What is an Exceptional Value Declaration? How is it done?</p>
+            <div class="answeeer10">
+              An exceptional value declaration refers to a situation where the customs value declaration is not made under certain conditions or where the customs value is determined by a specific regulation. These situations generally cover exceptional and special circumstances.
+            </div>
+          </div>
+      
+          <!-- Other questions and answers can be added here -->
+      
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="company-info">
+          <h2>BOĞAZİÇİ GÜMRÜKLEME İTH.İHR.TURİZM PET.ÜR.SAN VE TİC.LTD.ŞTİ</h2>
+          <p>Address:  ÇİFTEPINAR NEIGHBORHOOD INEGOL STREET ARAS BUSINESS CENTER NO:32/5
+            DOĞUBAYAZIT / AĞRI
+            </p>
+          <p>Telephone: 123456789</p>
+          <p>Email: info@example.com</p>
+        </div>
+      
+        <div class="quick-menu">
+          <h2>QUICK MENU</h2>
+          <ul>
+            <li onclick="window.location.href='index.html'"><i class="fas fa-chevron-right"></i>Home Page</li>
+            <li onclick="window.location.href='aboutus.html'"><i class="fas fa-chevron-right"></i>About Us</li>
+            <li onclick="window.location.href='service.html'"><i class="fas fa-chevron-right"></i>Our Services</li>
+            <li onclick="window.location.href='quality.html'"><i class="fas fa-chevron-right"></i>Our Quality Policy</li>
+            <li onclick="window.location.href='contact.html'"><i class="fas fa-chevron-right"></i>Contact</li>
+          </ul>
+        </div>
+      
+        <div class="services3">
+          <h2>OUR SERVICES</h2>
+          <ul>
+            <li onclick="window.location.href='ithalat.html'"><i class="fas fa-chevron-right"></i>Import Services</li>
+            <li onclick="window.location.href='ihracat.html'"><i class="fas fa-chevron-right"></i>Export Services</li>
+            <li onclick="window.location.href='transit.html'"><i class="fas fa-chevron-right"></i>Transit Custom Services</li>
+            <li onclick="window.location.href='antrepo.html'"><i class="fas fa-chevron-right"></i>Antrepo Services</li>
+            <li onclick="window.location.href='digital.html'"><i class="fas fa-chevron-right"></i>Digital Archiving</li>
+            <li onclick="window.location.href='danismanlik.html'"><i class="fas fa-chevron-right"></i>Consultancy Services</li>
+          </ul>
+        </div>
+        <div class="useful-info2">
+          <h2>USEFUL INFORMATION</h2>
+          <ul>
+            <li onclick="window.location.href='gumrukrehber.html'"><i class="fas fa-chevron-right"></i>Customs Guide</li>
+            <li><a href="https://uygulama.gtb.gov.tr/BeyannameSorgulama/" target="_blank"><i class="fas fa-chevron-right"></i>Declaration Inquiry</a></li>
+            <li><a href="https://webgumruk.com/authentication/login.xhtml" target="_blank"><i class="fas fa-chevron-right"></i>Web Customs</a></li>
+            <li><a href="https://ticaret.gov.tr/gumruk-islemleri/mevzuat" target="_blank"><i class="fas fa-chevron-right"></i>Legislation</a></li>
+          </ul>
+        </div>
+      </footer>
+<div id="scroll-to-top" onclick="scrollToTop()">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+<div class="contact-buttonnn mail-button" onclick="redirectToEmail()">
+  <i class="far fa-envelope"></i>
+</div>
+
+<div class="contact-buttonnnn phone-button" onclick="redirectToPhone()">
+  <i class="fas fa-phone"></i>
+</div>
+
+<script src="kiymettrans.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
